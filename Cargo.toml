@@ -1,0 +1,16 @@
+[package]
+name = "mssql-test"
+version = "0.1.0"
+authors = ["Julius de Bruijn <julius+github@nauk.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quaint = { git = "https://github.com/prisma/quaint", features = ["mssql"] }
+tokio = { version = "0.2", features = ["rt-threaded", "macros", "net"] }
+anyhow = "1"
+futures = "0.3"
+indoc = "1.0"
+tiberius = { version = "0.4.16" }
+async-std = "1.7"
